@@ -1,117 +1,125 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malik Mumbai</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-image: url('chahal.jpg'); /* Use your uploaded image here */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
 
-<!-- Meta Pixel Code --> 
-<script> 
-!function(f,b,e,v,n,t,s) 
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod? 
-n.callMethod.apply(n,arguments):n.queue.push(arguments)}; 
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0'; 
-n.queue=[];t=b.createElement(e);t.async=!0; 
-t.src=v;s=b.getElementsByTagName(e)[0]; 
-s.parentNode.insertBefore(t,s)}(window, document,'script', 
-'https://connect.facebook.net/en_US/fbevents.js'); 
-fbq('init', '1969159093594797'); 
-fbq('track', 'PageView'); 
-</script> 
-<noscript><img height="1" width="1" style="display:none" 
-src="https://www.facebook.com/tr?id=1969159093594797&ev=PageView&noscript=1" 
-/></noscript> 
-<!-- End Meta Pixel Code -->
+        /* Add a dimming effect over the background */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* 50% opacity black overlay */
+            z-index: 1;
+        }
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9510689448052977"
-crossorigin="anonymous"></script>
+        .container {
+            position: relative;
+            z-index: 2; /* Ensures content appears above the dimmed background */
+            padding: 15px;
+            max-width: 100%; /* Full width for mobile screens */
+        }
 
-<!--- basic page needs -->
-<meta charset="utf-8">
-<title>Goldy Prediction</title>
-<meta name="description" content="">
-<meta name="author" content="">
+        h1 {
+            font-size: 1.8em; /* Smaller font size for mobile */
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
 
-<!-- mobile specific metas -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
+        p {
+            font-size: 1em; /* Adjusted font size for mobile */
+            margin-bottom: 15px;
+        }
 
-<!-- CSS -->
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/vendor.css">
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        .button {
+            display: inline-block;
+            margin: 8px 0;
+            padding: 12px 18px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1em;
+            font-weight: bold;
+            box-shadow: 0px 3px 8px rgba(0, 123, 255, 0.5);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            width: 100%; /* Full-width buttons for mobile screens */
+        }
 
-<!-- script -->
-<script src="js/modernizr.js"></script>
-<script src="js/pace.min.js"></script>
+        .button:hover {
+            background-color: #0056b3;
+            box-shadow: 0px 3px 10px rgba(0, 123, 255, 0.7);
+        }
 
-<!-- favicons -->
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        .icon {
+            font-size: 1.3em;
+            vertical-align: middle;
+        }
 
-<script>
-var timeLeft = 60;
-var countdownTimer = setInterval(function () {
-    timeLeft--;
-    document.getElementById("timer").textContent = timeLeft;
+        /* Specific adjustments for mobile screens */
+        @media (max-width: 768px) {
+            body {
+                padding: 0 10px; /* Slight padding for smaller mobile screens */
+            }
+            h1 {
+                font-size: 1.6em; /* Reduce size further for smaller devices */
+            }
 
-    // Play voice effect here
-    var audio = new Audio('voice_effect.mp3');
-    audio.play();
+            p {
+                font-size: 0.9em; /* Smaller paragraph text */
+            }
 
-    if (timeLeft <= 0) {
-        clearInterval(countdownTimer);
-        // Redirect to your channel here
-        window.location.href = "https://t.me/+1WI-XejQ29VhYzc1";
-    }
-}, 1000);
-</script>
+            .button {
+                font-size: 0.9em;
+                padding: 10px 14px;
+            }
+        }
 
+        /* Even smaller mobile screens */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.4em;
+            }
+
+            .button {
+                font-size: 0.8em;
+                padding: 10px 12px;
+            }
+        }
+    </style>
 </head>
 <body>
 
-<!-- home -->
-<div style="border:solid white 5px; margin: 5px;">
-<main class="s-home s-home--static">
-    <div class="bkdiv overlay"></div>
-    <div class="home-content">
-        <div class="home-content__main">
-            <div class="col-eight home-content__text pull-right tmargin">
-                <h1 style="margin-top: 12px;font-size: 30px;" id="gold" class="dtoss">👑 Goldy Prediction 👑</h1>
-                <img src="WhatsApp Image 2024-03-07 at 21.13.35_861b1245.jpg" id="img2" class="center">
-                <div class="container">
-                    <a style="margin-left: 3px;" href="https://t.me/+1WI-XejQ29VhYzc1" target="_blank" class="btn btn-primary btn-lg alink blink">
-                        <i class="fa-brands fa-telegram ibttn"></i><span class="ibttn">Join Now For Free</span><i class="fa-brands fa-telegram ibttn"></i>
-                    </a>
-                </div>
-                <div style="margin-top: -40px;" class="home-content__counter">
-                    <div style="color: white;">
-                        <h2>Cricket Ka Zabardast Analyst ❤️💯</h2>
-                        <h2 style="margin-top: 10px;"></h2>
-                    </div>
-                    <div style="margin-top: 20px;" class="home-content__clock align">
-                        <div class="top">
-                            <div>Free joining end in Seconds Left <span id="countdown">00:00</span></div>
-                        </div>
-                        <span></span>
-                    </div>
-                </div>
-                <div class="container">
-                    <a style="margin-left: 13px; height: 85px;" href="https://t.me/+1WI-XejQ29VhYzc1" target="_blank" class="btn btn-primary btn-lg alink blink">
-                        <i class="fa-brands fa-telegram ibttn"></i><span class="ibttn">Subscribe to india's </span>
-                        <div class="ibttn" style="margin-top: -20px;">best tipper <i class="fa-brands fa-telegram ibttn"></i></div>
-                    </a>
-                </div>
-                <div>
-                    <h2 class="margin">⚡️PREDICTIONS ME WORLD RECORD⚡️</h2>
-                </div>
-            </div>
-        </div>
+    <div class="container">
+        <h1>MALIK MUMBAI</h1>
+        <p>Cricket Prediction Ka King</p>
+        <a href="https://t.me/your-telegram-link" target="_blank" class="button">JOIN NOW FOR FREE</a>
+        <p>🏏 CPL Me Dhamaka Kar Dia</p>
+        <p>All Match Pass De Kar 🏏</p>
+        <a href="https://t.me/your-telegram-link" target="_blank" class="button">SUBSCRIBE NOW FOR FREE</a>
     </div>
-</main>
-</div>
-
-<!-- Java Script -->
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
-<script src="js/main2.js"></script>
 
 </body>
 </html>
