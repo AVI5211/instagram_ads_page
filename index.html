@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Malik Mumbai</title>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&family=Lobster&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Merriweather:wght@700&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Poppins', sans-serif;
-            background-image: url('chahal.jpg'); /* Use your uploaded image here */
+            font-family: 'Open Sans', sans-serif;
+            background-image: url('chahal.jpg'); /* Replace with your image */
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -32,77 +32,70 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.6); /* 60% opacity black overlay */
+            background-color: rgba(0, 0, 0, 0.5); /* 50% opacity black overlay */
             z-index: 1;
         }
 
         .container {
             position: relative;
-            z-index: 2; /* Ensures content appears above the dimmed background */
+            z-index: 2;
             padding: 20px;
-            width: 100%; /* Take up full screen width */
+            width: 100%;
+            max-width: 900px; /* Limit width for larger screens */
         }
 
         h1 {
-            font-family: 'Lobster', cursive; /* Fancy font for the title */
-            font-size: 3.5em; /* Large font size for better visibility */
-            margin-top: 0; /* Remove top margin */
-            margin-bottom: 10px;
+            font-family: 'Merriweather', serif; /* Professional and bold font */
+            font-size: 4em; /* Larger font size for the title */
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: #ffffff; /* White color for title */
             text-transform: uppercase;
-            color: #ffd700; /* Golden color for a standout look */
-            width: 100%; /* Full width */
+            letter-spacing: 2px; /* Adds spacing between letters */
         }
 
         p {
-            font-family: 'Roboto', sans-serif; /* Clean font for paragraphs */
-            font-size: 1.5em; /* Slightly smaller than the title */
-            margin-bottom: 15px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.5em;
+            margin-bottom: 20px;
         }
 
         .button {
             display: inline-block;
-            margin: 10px 0;
-            padding: 12px 18px;
-            background-color: #808080; /* Gray background */
+            margin: 12px 0;
+            padding: 14px 24px;
+            background-color: #808080; /* Neutral gray */
             color: white;
             border-radius: 5px;
             text-decoration: none;
-            font-family: 'Montserrat', sans-serif; /* Bold font for buttons */
-            font-size: 1.1em;
-            font-weight: bold;
-            border: 2px solid transparent; /* Start with transparent border */
-            box-shadow: 0px 3px 8px rgba(0, 123, 255, 0.5);
+            font-size: 1.2em;
+            font-weight: 600;
             transition: background-color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
-            width: 100%; /* Full-width buttons for mobile screens */
+            border: 2px solid transparent; /* Transparent border initially */
         }
 
         .button:hover {
-            background-color: #808080; /* Keep the gray background */
-            border: 2px solid #ffd700; /* Golden neon border */
-            box-shadow: 0px 0px 15px #ffd700; /* Neon glow effect */
+            background-color: #808080; /* Keep gray */
+            border: 2px solid #ffd700; /* Golden border on hover */
+            box-shadow: 0px 0px 10px 5px rgba(255, 215, 0, 0.7); /* Soft glow effect */
         }
 
-        /* Specific adjustments for mobile screens */
+        /* Responsive Design for Different Screen Sizes */
         @media (max-width: 768px) {
-            body {
-                padding: 0 10px; /* Slight padding for smaller mobile screens */
-            }
-
             h1 {
-                font-size: 2.8em; /* Reduce size for smaller devices */
+                font-size: 3em; /* Smaller title on smaller screens */
             }
 
             p {
-                font-size: 1.2em; /* Smaller paragraph text */
+                font-size: 1.2em;
             }
 
             .button {
-                font-size: 0.9em;
-                padding: 10px 14px;
+                font-size: 1em;
+                padding: 12px 18px;
             }
         }
 
-        /* Even smaller mobile screens */
         @media (max-width: 480px) {
             h1 {
                 font-size: 2.5em;
@@ -113,8 +106,8 @@
             }
 
             .button {
-                font-size: 0.8em;
-                padding: 10px 12px;
+                font-size: 0.9em;
+                padding: 10px 16px;
             }
         }
     </style>
