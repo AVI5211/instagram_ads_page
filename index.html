@@ -44,12 +44,12 @@
             z-index: 2;
             padding: 20px;
             width: 100%;
-            max-width: 900px; /* Increased the max-width */
+            max-width: 900px; /* Max width to ensure good layout on larger screens */
         }
 
         h1 {
             font-family: 'Merriweather', serif;
-            font-size: 6em; /* Increased font size for Goldy Bhai */
+            font-size: 6em; /* Large font size for desktop */
             font-weight: 700;
             margin-top: 0;
             margin-bottom: 15px;
@@ -59,19 +59,19 @@
 
         p {
             font-family: 'Open Sans', sans-serif;
-            font-size: 2.5em; /* Increased font size */
+            font-size: 2.5em; /* Large font size for desktop */
             margin-bottom: 20px;
         }
 
         .button {
             display: inline-block;
             margin: 15px 0;
-            padding: 25px 60px; /* Increased button padding */
+            padding: 25px 60px; /* Large padding for desktop */
             background-color: #007bff;
             color: white;
             border-radius: 10px;
             text-decoration: none;
-            font-size: 2.5em; /* Increased button text size */
+            font-size: 2.5em; /* Large button font for desktop */
             font-weight: 600;
             box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.5);
             transition: background-color 0.3s ease, box-shadow 0.3s ease;
@@ -107,32 +107,36 @@
         /* Responsive adjustments for tablet size */
         @media (max-width: 768px) {
             h1 {
-                font-size: 5em; /* Slightly smaller for tablets */
+                font-size: 4em; /* Reduced size for tablets */
             }
 
             p {
-                font-size: 2em;
+                font-size: 2em; /* Reduced paragraph size */
             }
 
             .button {
                 font-size: 2em;
-                padding: 20px 50px;
+                padding: 20px 40px; /* Adjusted button size */
             }
         }
 
-        /* Responsive adjustments for mobile size */
+        /* Proper responsive adjustments for mobile size */
         @media (max-width: 480px) {
             h1 {
-                font-size: 4em; /* Smaller for mobile */
+                font-size: 3em; /* Reduced size for mobile */
             }
 
             p {
-                font-size: 1.8em;
+                font-size: 1.5em; /* Reduced paragraph size */
             }
 
             .button {
-                font-size: 1.8em;
-                padding: 15px 40px;
+                font-size: 1.5em; /* Smaller button font */
+                padding: 15px 30px; /* Reduced button padding */
+            }
+
+            .container {
+                padding: 15px;
             }
         }
 
