@@ -44,12 +44,12 @@
             z-index: 2;
             padding: 20px;
             width: 100%;
-            max-width: 800px;
+            max-width: 900px; /* Increased the max-width */
         }
 
         h1 {
             font-family: 'Merriweather', serif;
-            font-size: 5em; /* Increased font size for Goldy Bhai */
+            font-size: 6em; /* Increased font size for Goldy Bhai */
             font-weight: 700;
             margin-top: 0;
             margin-bottom: 15px;
@@ -59,19 +59,19 @@
 
         p {
             font-family: 'Open Sans', sans-serif;
-            font-size: 2em; /* Increased font size */
+            font-size: 2.5em; /* Increased font size */
             margin-bottom: 20px;
         }
 
         .button {
             display: inline-block;
-            margin: 10px 0;
-            padding: 20px 50px; /* Increased button padding */
+            margin: 15px 0;
+            padding: 25px 60px; /* Increased button padding */
             background-color: #007bff;
             color: white;
             border-radius: 10px;
             text-decoration: none;
-            font-size: 2em; /* Increased button text size */
+            font-size: 2.5em; /* Increased button text size */
             font-weight: 600;
             box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.5);
             transition: background-color 0.3s ease, box-shadow 0.3s ease;
@@ -107,7 +107,23 @@
         /* Responsive adjustments for tablet size */
         @media (max-width: 768px) {
             h1 {
-                font-size: 4em; /* Slightly smaller for tablets */
+                font-size: 5em; /* Slightly smaller for tablets */
+            }
+
+            p {
+                font-size: 2em;
+            }
+
+            .button {
+                font-size: 2em;
+                padding: 20px 50px;
+            }
+        }
+
+        /* Responsive adjustments for mobile size */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 4em; /* Smaller for mobile */
             }
 
             p {
@@ -117,22 +133,6 @@
             .button {
                 font-size: 1.8em;
                 padding: 15px 40px;
-            }
-        }
-
-        /* Responsive adjustments for mobile size */
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 3em; /* Smaller for mobile */
-            }
-
-            p {
-                font-size: 1.5em;
-            }
-
-            .button {
-                font-size: 1.5em;
-                padding: 12px 35px;
             }
         }
 
