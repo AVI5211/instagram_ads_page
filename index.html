@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aryan Guruji Predictions</title>
+    <title>Goldy Bhai Predictions</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Merriweather:wght@700&display=swap" rel="stylesheet">
     <style>
@@ -16,13 +16,15 @@
             background-position: center;
             background-attachment: fixed;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start; /* Align content to the top */
             align-items: center;
+            flex-direction: column; /* Stack elements vertically */
             height: 100vh;
             text-align: center;
             color: white;
             position: relative;
             overflow: hidden;
+            padding-top: 50px; /* Add some space at the top */
         }
 
         /* Add a stronger dimming overlay to dull the background image */
@@ -47,7 +49,7 @@
 
         h1 {
             font-family: 'Merriweather', serif;
-            font-size: 3em;
+            font-size: 5em; /* Increased font size for Goldy Bhai */
             font-weight: 700;
             margin-top: 0;
             margin-bottom: 15px;
@@ -57,19 +59,19 @@
 
         p {
             font-family: 'Open Sans', sans-serif;
-            font-size: 1.5em;
+            font-size: 2em; /* Increased font size */
             margin-bottom: 20px;
         }
 
         .button {
             display: inline-block;
             margin: 10px 0;
-            padding: 15px 35px;
+            padding: 20px 50px; /* Increased button padding */
             background-color: #007bff;
             color: white;
             border-radius: 10px;
             text-decoration: none;
-            font-size: 1.5em;
+            font-size: 2em; /* Increased button text size */
             font-weight: 600;
             box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.5);
             transition: background-color 0.3s ease, box-shadow 0.3s ease;
@@ -84,32 +86,32 @@
         /* Responsive adjustments for tablet size */
         @media (max-width: 768px) {
             h1 {
-                font-size: 2.5em;
+                font-size: 4em; /* Slightly smaller for tablets */
             }
 
             p {
-                font-size: 1.3em;
+                font-size: 1.8em;
             }
 
             .button {
-                font-size: 1.3em;
-                padding: 12px 28px;
+                font-size: 1.8em;
+                padding: 15px 40px;
             }
         }
 
         /* Responsive adjustments for mobile size */
         @media (max-width: 480px) {
             h1 {
-                font-size: 2em;
+                font-size: 3em; /* Smaller for mobile */
             }
 
             p {
-                font-size: 1.2em;
+                font-size: 1.5em;
             }
 
             .button {
-                font-size: 1.2em;
-                padding: 10px 20px;
+                font-size: 1.5em;
+                padding: 12px 35px;
             }
         }
 
