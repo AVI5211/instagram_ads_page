@@ -110,15 +110,18 @@
             pointer-events: none; /* Prevent interaction */
         }
 
-        /* Zoom-out animation */
+        /* Zoom-out animation with opacity reduction */
         @keyframes zoom-out {
             0% {
                 transform: translate(-50%, -50%) scale(1);
                 opacity: 1;
             }
+            50% {
+                opacity: 0.5; /* Reduce opacity halfway through the animation */
+            }
             100% {
                 transform: translate(-50%, -50%) scale(3);
-                opacity: 0;
+                opacity: 0; /* Fully transparent at the end */
             }
         }
 
