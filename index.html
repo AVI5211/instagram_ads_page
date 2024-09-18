@@ -90,27 +90,29 @@
             overflow: hidden;
         }
 
-        /* Continuous zoom-in circular animation */
-        .button::after {
-            content: "";
+        /* Blue Circle Behind the Button */
+        .circle-animation {
             position: absolute;
             top: 50%;
             left: 50%;
-            width: 150%;
-            height: 150%;
-            background-color: rgba(0, 123, 255, 0.3);
+            width: 100px;
+            height: 100px;
+            background-color: rgba(0, 123, 255, 0.6);
             border-radius: 50%;
             transform: translate(-50%, -50%) scale(1);
-            animation: zoom-in-circle 2s linear infinite;
-            z-index: -1; /* Make sure the animation stays behind the button */
+            z-index: -1;
+            animation: zoom-out-circle 3s infinite ease-in-out;
         }
 
-        @keyframes zoom-in-circle {
+        /* Continuous zoom-out animation */
+        @keyframes zoom-out-circle {
             0% {
                 transform: translate(-50%, -50%) scale(1);
+                opacity: 1;
             }
             100% {
-                transform: translate(-50%, -50%) scale(1.5);
+                transform: translate(-50%, -50%) scale(2.5);
+                opacity: 0;
             }
         }
 
@@ -118,25 +120,6 @@
             background-color: #ffd700;
             color: black;
             box-shadow: 0px 0px 15px 8px rgba(255, 215, 0, 0.7);
-        }
-
-        /* Background animation for the buttons */
-        .button::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 200%;
-            height: 100%;
-            background: linear-gradient(120deg, rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5), rgba(0, 255, 0, 0.5));
-            z-index: -1;
-            transition: all 0.5s ease;
-            animation: gradient-animation 5s infinite alternate;
-        }
-
-        @keyframes gradient-animation {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(50%); }
         }
 
         /* Responsive adjustments for tablet size */
@@ -182,10 +165,16 @@
     <div class="container">
         <h1>Goldy Bhai</h1>
         <p>Cricket Prediction Ka King</p>
-        <a href="https://t.me/+22jxbutlKjs2OTk1" target="_blank" class="button">JOIN NOW FOR FREE</a>
+        <a href="https://t.me/+22jxbutlKjs2OTk1" target="_blank" class="button">
+            <div class="circle-animation"></div>
+            JOIN NOW FOR FREE
+        </a>
         <p>🏏 CPL Me Dhamaka Kar Dia</p>
         <p>All Match Pass De Kar 🏏</p>
-        <a href="https://t.me/+22jxbutlKjs2OTk1" target="_blank" class="button">SUBSCRIBE NOW FOR FREE</a>
+        <a href="https://t.me/+22jxbutlKjs2OTk1" target="_blank" class="button">
+            <div class="circle-animation"></div>
+            SUBSCRIBE NOW FOR FREE
+        </a>
         <p>🏆 World Record Holder 🏆</p>
     </div>
 
