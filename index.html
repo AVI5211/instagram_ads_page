@@ -1,152 +1,115 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
-    <!-- Meta Pixel Code --> 
-    <script> 
-        !function(f,b,e,v,n,t,s) 
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod? 
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)}; 
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0'; 
-        n.queue=[];t=b.createElement(e);t.async=!0; 
-        t.src=v;s=b.getElementsByTagName(e)[0]; 
-        s.parentNode.insertBefore(t,s)}(window, document,'script', 
-        'https://connect.facebook.net/en_US/fbevents.js'); 
-        fbq('init', '1969159093594797'); 
-        fbq('track', 'PageView'); 
-    </script> 
-    <noscript><img height="1" width="1" style="display:none" 
-    src="https://www.facebook.com/tr?id=1969159093594797&ev=PageView&noscript=1"/></noscript> 
-    <!-- End Meta Pixel Code -->
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9510689448052977"
-    crossorigin="anonymous"></script>
+<!-- Meta Pixel Code --> 
+<script> 
+!function(f,b,e,v,n,t,s) 
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod? 
+n.callMethod.apply(n,arguments):n.queue.push(arguments)}; 
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0'; 
+n.queue=[];t=b.createElement(e);t.async=!0; 
+t.src=v;s=b.getElementsByTagName(e)[0]; 
+s.parentNode.insertBefore(t,s)}(window, document,'script', 
+'https://connect.facebook.net/en_US/fbevents.js'); 
+fbq('init', '1969159093594797'); 
+fbq('track', 'PageView'); 
+</script> 
+<noscript><img height="1" width="1" style="display:none" 
+src="https://www.facebook.com/tr?id=1969159093594797&ev=PageView&noscript=1" 
+/></noscript> 
+<!-- End Meta Pixel Code -->
 
-    <!-- Basic Page Needs -->
-    <meta charset="utf-8">
-    <title>Goldy Prediction</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9510689448052977"
+crossorigin="anonymous"></script>
 
-    <!-- Mobile Specific Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--- basic page needs -->
+<meta charset="utf-8">
+<title>Goldy Prediction</title>
+<meta name="description" content="">
+<meta name="author" content="">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- mobile specific metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Script -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
+<!-- CSS -->
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/vendor.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Favicons -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<!-- script -->
+<script src="js/modernizr.js"></script>
+<script src="js/pace.min.js"></script>
 
-    <script>
-    var timeLeft = 60;
-    var countdownTimer = setInterval(function () {
-        timeLeft--;
-        document.getElementById("timer").textContent = timeLeft;
+<!-- favicons -->
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-        var audio = new Audio('voice_effect.mp3');
-        audio.play();
+<script>
+var timeLeft = 60;
+var countdownTimer = setInterval(function () {
+    timeLeft--;
+    document.getElementById("timer").textContent = timeLeft;
 
-        if (timeLeft <= 0) {
-            clearInterval(countdownTimer);
-            window.location.href = "https://t.me/+1WI-XejQ29VhYzc1";
-        }
-    }, 1000);
-    </script>
+    // Play voice effect here
+    var audio = new Audio('voice_effect.mp3');
+    audio.play();
 
-    <style>
-        /* Responsive and Enhanced Styling */
-        .home-content__text h1 {
-            font-size: 2.8rem; /* Increased base size */
-            color: #ffd700;
-            text-align: center;
-            margin: 0.5em 0;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-        }
-        .home-content__counter h2 {
-            font-size: 1.5rem;
-            text-align: center;
-            color: white;
-        }
-        .btn {
-            display: inline-block;
-            margin: 0.5em auto;
-            text-align: center;
-        }
-        img.center {
-            display: block;
-            max-width: 100%;
-            height: auto;
-            margin: 1em auto;
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .align {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        @media only screen and (min-width: 768px) {
-            .home-content__text h1 {
-                font-size: 9.5rem; /* Larger size on tablets */
-            }
-            .home-content__counter h2 {
-                font-size: 2rem;
-            }
-            .btn {
-                width: auto;
-                font-size: 1.25rem;
-            }
-        }
-        @media only screen and (max-width: 480px) {
-            .home-content__text h1 {
-                font-size: 2.5rem; /* Increase size on smaller screens */
-            }
-            .home-content__counter h2 {
-                font-size: 1.2rem;
-            }
-            .btn {
-                width: 100%;
-                padding: 0.75em;
-            }
-        }
-    </style>
+    if (timeLeft <= 0) {
+        clearInterval(countdownTimer);
+        // Redirect to your channel here
+        window.location.href = "https://t.me/+1WI-XejQ29VhYzc1";
+    }
+}, 1000);
+</script>
+
 </head>
 <body>
 
+<!-- home -->
 <div style="border:solid white 5px; margin: 5px;">
-    <main class="s-home s-home--static">
-        <div class="bkdiv overlay"></div>
-        <div class="home-content">
-            <div class="home-content__main">
-                <div class="home-content__text">
-                    <h1 id="gold" class="dtoss">👑 Goldy Prediction 👑</h1>
-                </div>
-                <div class="home-content__counter">
+<main class="s-home s-home--static">
+    <div class="bkdiv overlay"></div>
+    <div class="home-content">
+        <div class="home-content__main">
+            <div class="col-eight home-content__text pull-right tmargin">
+                <h1 style="margin-top: 12px;font-size: 30px;" id="gold" class="dtoss">👑 Goldy Prediction 👑</h1>
+            </div>
+            <div style="margin-top: -40px;" class="home-content__counter">
+                <div style="color: white;">
                     <h2>Cricket Ka Zabardast Analyst ❤️</h2>
-                    <div>Seconds Left <span id="countdown">00:00</span></div>
-                    <img src="IMG_7294.jpg" id="img2" class="center">
-                    <div class="container">
-                        <a href="https://t.me/+1WI-XejQ29VhYzc1" target="_blank" class="btn btn-primary btn-lg alink blink">
-                            <i class="fa-brands fa-telegram ibttn"></i><span>Join Now For Free</span><i class="fa-brands fa-telegram ibttn"></i>
-                        </a>
+                    <h2 style="margin-top: 10px;"></h2>
+                </div>
+                <div>Seconds Left <span id="countdown">00:00</span></div>
+                <img src="IMG_7294.jpg" id="img2" class="center">
+                <div class="container">
+                    <a style="margin-left: 3px;" href="https://t.me/+1WI-XejQ29VhYzc1" target="_blank" class="btn btn-primary btn-lg alink blink">
+                        <i class="fa-brands fa-telegram ibttn"></i><span class="ibttn">Join Now For Free</span><i class="fa-brands fa-telegram ibttn"></i>
+                    </a>
+                
+                    <div style="margin-top: 20px;" class="home-content__clock align">
+                        <div class="top">
+                            
+                        </div>
+                        <span></span>
                     </div>
+                </div>
+                <div class="container">
+                    <a style="margin-left: 13px; height: 85px;" href="https://t.me/+1WI-XejQ29VhYzc1" target="_blank" class="btn btn-primary btn-lg alink blink">
+                        <i class="fa-brands fa-telegram ibttn"></i><span class="ibttn">Subscribe to india's </span>
+                        <div class="ibttn" style="margin-top: -20px;">best tipper <i class="fa-brands fa-telegram ibttn"></i></div>
+                    </a>
+                </div>
+                <div>
                     <h2 class="margin">⚡️PREDICTIONS ME WORLD RECORD⚡️</h2>
                 </div>
             </div>
         </div>
-    </main>
+    </div>
+</main>
 </div>
 
-<!-- JavaScript -->
+<!-- Java Script -->
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
