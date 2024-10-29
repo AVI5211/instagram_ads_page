@@ -1184,14 +1184,15 @@
     background: #000000;
   }
   
-  .bkdiv{
-    background-image: url(d355b25f-a288-4fe2-8387-2718b6109385.jpg);
-    opacity: 1.0;
-    background-position: center ;
-   background-size: cover;
-          background-repeat: no-repeat;
-          
-  }
+  .bkdiv {
+    background-image: url('d355b25f-a288-4fe2-8387-2718b6109385.JPG');
+    opacity: 1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(1.5); /* Adjust this value as needed */
+}
+
   
   .s-home .overlay {
     position: absolute;
